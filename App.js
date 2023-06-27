@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput } from "react-native";
 import React, { useState } from "react";
 
 export default function App() {
-  const [name, setName] = useState("MuhibulHaq Said Ally");
+  const [name, setName] = useState("MuhibulHaq Said Ali");
   const [age, setAge] = useState("30");
 
   return (
@@ -15,7 +15,7 @@ export default function App() {
         placeholder="Enter Name e.g Don Doe"
         onChangeText={(name) => {
           setName(name);
-        }}
+        }} 
       />
       {/* age */}
       <Text>Enter Age:</Text>
