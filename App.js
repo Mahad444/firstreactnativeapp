@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 export default function App() {
   const [name, setName] = useState("MuhibulHaq Said Ali");
-  const [age, setAge] = useState("30");
+  const [age, setAge] = useState("32");
 
   return (
     <View style={styles.container}>
