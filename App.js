@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput } from "react-native";
 import React, { useState } from "react";
 
 export default function App() {
-  const [name, setName] = useState("MuhibulHaq Said Ali");
+  const [name, setName] = useState("MuhibulHaqqu Said Ali");
   const [age, setAge] = useState("32");
 
   return (
