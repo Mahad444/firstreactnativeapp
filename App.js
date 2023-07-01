@@ -4,15 +4,16 @@ import React, { useState } from "react";
 
 export default function App() {
   const [name, setName] = useState("MuhibulHaqqu Said Ali");
-  const [age, setAge] = useState("32");
+  const [age, setAge] = useState("12");
 
   return (
     <View style={styles.container}>
       <Text>Enter Name:</Text>
       <TextInput
+      keyboardType="default"
         multiline
         style={styles.input}
-        placeholder="Enter Name e.g Don Doe"
+        placeholder="Weka jina  mfano  Don Doe"
         onChangeText={(name) => {
           setName(name);
         }} 
@@ -22,13 +23,13 @@ export default function App() {
       <TextInput
       keyboardType="numeric"
         style={styles.input}
-        placeholder="Enter age e.g 12"
+        placeholder="Weka Umri m.f 12"
         onChangeText={(age) => {
           setAge(age);
         }}
       />
       <Text>
-        name:{name} , age:{age}
+        Jina:{name} , miaka:{age}
       </Text>
     </View>
   );
