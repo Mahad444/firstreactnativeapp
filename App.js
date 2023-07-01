@@ -1,36 +1,29 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, TextInput } from "react-native";
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 
 export default function App() {
-  const [name, setName] = useState("MuhibulHaqqu Said Ali");
-  const [age, setAge] = useState("12");
+  const [people, setPeople] = useState([
+    { name: 'Mahad', id: '1' },
+    { name: 'Khadija', id: '2' },
+    { name: 'Arafat', id: '3' },
+    { name: 'Hudheifa', id: '4' },
+    { name: 'Muhib', id: '5' },
+    { name: 'Maimuna', id: '6' },
+    { name: 'Said Ally', id: '7' },
+  ]);
 
   return (
     <View style={styles.container}>
-      <Text>Enter Name:</Text>
-      <TextInput
-      keyboardType="default"
-        multiline
-        style={styles.input}
-        placeholder="Weka jina  mfano  Don Doe"
-        onChangeText={(name) => {
-          setName(name);
-        }} 
+
+      <FlatList 
+        numColumns={2}
+        keyExtractor={(item) => item.id} 
+        data={people} 
+        renderItem={({ item }) => ( 
+          <Text style={styles.item}>{item.name}</Text>
+        )}
       />
-      {/* age */}
-      <Text>Enter Age:</Text>
-      <TextInput
-      keyboardType="numeric"
-        style={styles.input}
-        placeholder="Weka Umri m.f 12"
-        onChangeText={(age) => {
-          setAge(age);
-        }}
-      />
-      <Text>
-        Jina:{name} , miaka:{age}
-      </Text>
+
     </View>
   );
 }
@@ -38,31 +31,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f9f9f9",
-    alignItems: "center",
-    justifyContent: "center",
+    paddingTop: 40,
+    paddingHorizontal: 20,
+    backgroundColor: '#f9f9f9',
   },
-  header: {
-    backgroundColor: "#f00",
-    padding: 20,
-    borderRadius: 9,
-  },
-  boldText: {
-    fontWeight: "bold",
-  },
-  body: {
-    backgroundColor: "#0f0",
-    padding: 20,
-    borderRadius: 15,
-  },
-  buttonContainer: {
-    marginTop: 20,
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: "#777",
-    padding: 8,
-    margin: 15,
-    width: 200,
+  item: {
+    flex: 1,
+    marginHorizontal: 10,
+    marginTop: 24,
+    padding: 30,
+    backgroundColor: 'pink',
+    fontSize: 24,
   },
 });
