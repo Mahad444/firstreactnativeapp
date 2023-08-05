@@ -8,7 +8,7 @@ export default function App() {
     { name: 'Arafat', id: '3' },
     { name: 'Hudheifa', id: '4' },
     { name: 'Muhib', id: '5' },
-    { name: 'Maimuna', id: '6' },
+    { name: 'Maimuna Ahmed', id: '6' },
     { name: 'Said Ally', id: '7' },
   ]);
 
