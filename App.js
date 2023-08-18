@@ -32,7 +32,6 @@ export default function App() {
           <TouchableOpacity onPress={() => pressHandler(item.id)}>
           <Text style={styles.item}>{item.name}</Text>
             </TouchableOpacity>
-
         )}
       />
 
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     marginTop: 24,
     padding: 30,
-    backgroundColor: 'grey',
+    backgroundColor: 'pink',
     fontSize: 24,
     borderRadius: 20,
 
