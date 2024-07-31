@@ -10,6 +10,7 @@ export default function App() {
     { name: 'Muhib', id: '5' },
     { name: 'Maimuna Ahmed', id: '6' },
     { name: 'Said Ally', id: '7' },
+    { name: 'Said Baraka Bafana', id: '8' },
   ]);
 
   const pressHandler = (id) => {
