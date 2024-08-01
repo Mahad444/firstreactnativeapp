@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, FlatList,TouchableOpacity } from 'react-native'
 
 export default function App() {
   const [people, setPeople] = useState([
+    { name: 'Maimuna', id: '0' },
     { name: 'Mahad', id: '1' },
     { name: 'Khadija', id: '2' },
     { name: 'Arafat', id: '3' },
@@ -33,6 +34,7 @@ export default function App() {
           <TouchableOpacity onPress={() => pressHandler(item.id)}>
           <Text style={styles.item}>{item.name}</Text>
             </TouchableOpacity>
+
         )}
       />
 
