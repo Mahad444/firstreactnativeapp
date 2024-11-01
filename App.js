@@ -59,11 +59,11 @@ const styles = StyleSheet.create({
     borderRadius: 20,
 
   },
-  // item: {
-  //   marginTop: 24,
-  //   padding: 30,
-  //   backgroundColor: 'pink',
-  //   fontSize: 24,
-  //   borderRadius: 20,
-  // },
+  item: {
+    marginTop: 24,
+    padding: 30,
+    backgroundColor: 'pink',
+    fontSize: 24,
+    borderRadius: 20,
+  },
 });
