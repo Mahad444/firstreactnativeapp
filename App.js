@@ -67,3 +67,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 });
+// Path: App.js
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, FlatList,TouchableOpacity } from 'react-native';
