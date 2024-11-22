@@ -18,3 +18,8 @@ function getCurrentTime() {
     var seconds = date.getSeconds();
     return hours + ":" + minutes + ":" + seconds;
 }
+
+//function to check location
+function getLocation(){
+    
+}
