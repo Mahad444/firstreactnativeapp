@@ -73,6 +73,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     borderRadius: 20,
   },
+  item: {
+    marginTop: 24,
+    padding: 30,
+    backgroundColor: 'red',
+    fontSize: 24,
+    borderRadius: 20,
+  },
 });
 
 
