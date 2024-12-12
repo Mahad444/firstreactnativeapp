@@ -6,3 +6,8 @@ function doSomething(callback) {
   // call the callback function
   callback();
 }
+
+// callback function
+function sayHello() {
+  console.log('Hello');
+}
