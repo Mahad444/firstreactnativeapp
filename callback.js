@@ -11,3 +11,5 @@ function doSomething(callback) {
 function sayHello() {
   console.log('Hello');
 }
+// pass the callback function as an argument 
+doSomething(sayHello); // Hello
