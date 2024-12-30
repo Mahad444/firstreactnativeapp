@@ -26,4 +26,10 @@ function getLocation(){
     } else {
         console.log("Geolocation is not supported by this browser.");
     }
+    // fuction for weather
+    function showPosition(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        console.log("Latitude: " + lat + " Longitude: " + lon);
+    }
 }
