@@ -32,4 +32,19 @@ function getLocation(){
         var lon = position.coords.longitude;
         console.log("Latitude: " + lat + " Longitude: " + lon);
     }
+    // function for weather
+    function getWeather() {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "" + "&appid=4f0e1d1e7c6f6a4a0e6f3c2e1e6f3c2e";
+        app id = "4f0e1d1e7c6f6a4a0e6f3c2e1e6f3c2e"
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.log("Error: " + error);
+            });
+        }
 }
