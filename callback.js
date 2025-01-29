@@ -12,4 +12,8 @@ function sayHello() {
   console.log('Hello');
 }
 // pass the callback function as an argument 
-doSomething(sayHello); // Hello
+doSomething(sayHello); 
+
+// Hello
+// In this example, the sayHello function is passed as an argument to the doSomething function. The doSomething function then calls the callback function, resulting in the output "Hello". This is an example of a callback function.
+
