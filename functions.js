@@ -24,7 +24,7 @@ function getLocation(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
-        console.log("Geolocation is not supported by this browser.");
+        console.log("Geolocation is not supported by this browser, try reloading the page.");
     }
     // fuction for weather
     function showPosition(position) {
